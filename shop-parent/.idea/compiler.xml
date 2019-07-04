@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-gateway" />
+        <module name="shop-registry" />
+        <module name="item-interface" />
+        <module name="item-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="item-interface" options="-parameters" />
+      <module name="item-service" options="-parameters" />
+      <module name="shop-gateway" options="-parameters" />
+      <module name="shop-item" options="-parameters" />
+      <module name="shop-parent" options="-parameters" />
+      <module name="shop-registry" options="-parameters" />
+    </option>
+  </component>
+</project>
