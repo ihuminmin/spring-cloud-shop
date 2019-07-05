@@ -7,6 +7,7 @@ spring:
     url: jdbc:mysql://localhost:3306/test_demo
     username: root
     password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
     hikari:
       maximum-pool-size: 30
       minimum-idle: 10

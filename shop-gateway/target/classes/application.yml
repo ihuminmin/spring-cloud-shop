@@ -9,6 +9,9 @@ eureka:
       defaultZone: http://127.0.0.1:10086/eureka
 zuul:
   prefix: /api
+  retryable: true
+  routes:
+    item-service: /item/**
 ribbon:
   ConnectTimeout: 500
   ReadTimeOut: 2000
