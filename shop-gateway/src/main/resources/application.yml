@@ -11,7 +11,7 @@ zuul:
   prefix: /api
   retryable: true
   routes:
-    item-service: /item/**
+    item-service: /item-service/**
 ribbon:
   ConnectTimeout: 500
   ReadTimeOut: 2000
