@@ -11,7 +11,11 @@ zuul:
   prefix: /api
   retryable: true
   routes:
-    item-service: /item-service/**
+    item-service: /item-service/**    #将商品微服务映射到此路径
+    upload-service:
+      path: /upload/**
+      serviceId: upload-service
+      strip-prefix: false
 ribbon:
   ConnectTimeout: 500
   ReadTimeOut: 2000
