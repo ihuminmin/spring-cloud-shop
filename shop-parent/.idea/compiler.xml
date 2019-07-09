@@ -2,14 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop-gateway" />
+        <module name="shop-common" />
         <module name="shop-registry" />
+        <module name="shop-upload" />
         <module name="item-interface" />
         <module name="item-service" />
+        <module name="shop-gateway" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,10 +20,12 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="item-interface" options="-parameters" />
       <module name="item-service" options="-parameters" />
+      <module name="shop-common" options="-parameters" />
       <module name="shop-gateway" options="-parameters" />
       <module name="shop-item" options="-parameters" />
       <module name="shop-parent" options="-parameters" />
       <module name="shop-registry" options="-parameters" />
+      <module name="shop-upload" options="-parameters" />
     </option>
   </component>
 </project>
